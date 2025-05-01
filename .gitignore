@@ -11,6 +11,8 @@
 ./node_modules
 npm-debug.log
 yarn-error.log
+./angular
+./angular/cache
 
 # Angular specific ignores
 node_modules/
@@ -94,3 +96,5 @@ packages
 .idea/
 .vscode/
 *.DS_Store
+/testgitoperations.client/.angular/cache/19.2.10
+/.vs
