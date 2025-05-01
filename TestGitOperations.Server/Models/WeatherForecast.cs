@@ -1,4 +1,4 @@
-namespace TestGitOperations.Server
+namespace TestGitOperations.Server.Models
 {
     public class WeatherForecast
     {
