@@ -29,5 +29,29 @@ namespace TestGitOperations.Server.Controllers
             })
             .ToArray();
         }
+
+        public ActionResult ConvertToKelvin(double value, string scale)
+        {
+            double kelvin;
+
+            if (scale.ToLower() == "c")
+            {
+                kelvin = CelsiusToKelvin(value);
+            }
+            else if (scale.ToLower() == "f")
+            {
+                kelvin = FahrenheitToKelvin(value);
+            }
+            else
+            {
+                return new HttpStatusCodeResult(400, "Invalid scale. Use 'c' or 'f'.");
+            }
+
+            return Content($"Input: {value}°{scale.ToUpper()}, Kelvin: {kelvin} K");
+        }
+
+
+
+
     }
 }
