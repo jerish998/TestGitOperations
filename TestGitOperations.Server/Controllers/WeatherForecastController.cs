@@ -65,5 +65,14 @@ namespace TestGitOperations.Server.Controllers
             }
         }
         #endregion
+
+
+
+       public void Add()
+        {
+            int a = 10;
+            int b = 10;
+            int sum = a + b;
+        }
     }
 }
