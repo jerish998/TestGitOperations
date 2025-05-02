@@ -50,7 +50,11 @@ namespace TestGitOperations.Server.Controllers
             return Content($"Input: {value}°{scale.ToUpper()}, Kelvin: {kelvin} K");
         }
 
-
+        // Celsius to Kelvin
+        public double CelsiusToKelvin(double celsius)
+        {
+            return celsius + 273.15;
+        }
 
 
     }
