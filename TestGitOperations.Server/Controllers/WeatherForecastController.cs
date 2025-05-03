@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using TestGitOperations.Server.Models;
 
 namespace TestGitOperations.Server.Controllers
 {
